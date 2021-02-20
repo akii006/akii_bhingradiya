@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: blanchedalmond;
+
+        }
+        h1{
+            margin:20px;
+            padding-left: 600px;
+            font-weight: bolder;
+            text-shadow: 0px 5px 5px black;
+            font-size: 50px;
+            color: red;
+        }
+        .container{
+            background-color: blanchedalmond;
+        }
+        .main{
+            margin: 20px;
+            padding: 20px;
+            height: 50px;
+            border-bottom: 2px dotted black;
+            /* border: 2px dotted black; */
+        }
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            padding-left: 50px;
+            font-weight: bolder;
+            color: red;
+        }
+        img{
+            height: 0px;
+            width: 0px;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PROJECT</h1>
+        <div class="main" id="main1" onmouseover="calc()" onmouseout="calcoff()">
+            <a href="https://competent-agnesi-c220c2.netlify.app/">CALCULATOR</a>
+            <img src="calcu.png" id="img1">
+        </div>
+        <div class="main" id="main2" onmouseover="stopw()" onmouseout="stopwoff()">
+            <a href="https://pensive-carson-b16285.netlify.app">STOP WATCH</a>
+            <img src="stopwatch.png" id="img2">
+        </div>
+        <div class="main" id="main3" onmouseover="keybord()" onmouseout="keybordoff()">
+            <a href="https://loving-goldberg-eb3916.netlify.app/">KEYBORD</a>
+            <img src="keybord.png" id="img3">
+        </div>
+        <div class="main" id="main4" onmouseover="ludo()" onmouseout="ludooff()">
+            <a href="https://sharp-lamport-0a68f5.netlify.app/">LUDO</a>
+            <img src="ludo.png" id="img4">
+        </div>
+        <div class="main" id="main5" onmouseover="drum()" onmouseout="drumoff()">
+            <a href="https://happy-golick-6a20fe.netlify.app/">DRUM KING</a>
+            <img src="drum.png" id="img5">
+        </div>
+        <div class="main" id="main6" onmouseover="heart()" onmouseout="heartoff()">
+            <a href="https://wizardly-noether-4b0133.netlify.app/">HEART</a>
+            <img src="heart.png" id="img6">
+        </div>
+        <div class="main" id="main7" onmouseover="note()" onmouseout="noteoff()">
+            <a href="https://upbeat-ptolemy-493e6b.netlify.app/">NOTE</a>
+            <img src="note.png" id="img7">
+        </div>
+        <div class="main" id="main8" onmouseover="vale()" onmouseout="valeoff()">
+            <a href="https://serene-curie-dee8aa.netlify.app/">VAILANTINE</a>
+            <img src="vale.png" id="img8">
+        </div>
+        <div class="main" id="main9" onmouseover="truth()" onmouseout="truthoff()">
+            <a href="https://jolly-sinoussi-8072a9.netlify.app/">TRUTH-DARE</a>
+            <img src="truth.png" id="img9">
+        </div>
+    </div>
+
+    <script>
+        function calc(){
+            document.getElementById('main1').style.height = "300px";
+            document.getElementById('img1').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function calcoff(){
+            document.getElementById('main1').style.height = "50px";
+            document.getElementById('img1').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+        function stopw(){
+            document.getElementById('main2').style.height = "300px";
+            document.getElementById('img2').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function stopwoff(){
+            document.getElementById('main2').style.height = "50px";
+            document.getElementById('img2').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+        function keybord(){
+            document.getElementById('main3').style.height = "300px";
+            document.getElementById('img3').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function keybordoff(){
+            document.getElementById('main3').style.height = "50px";
+            document.getElementById('img3').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+        function ludo(){
+            document.getElementById('main4').style.height = "300px";
+            document.getElementById('img4').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function ludooff(){
+            document.getElementById('main4').style.height = "50px";
+            document.getElementById('img4').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+        function drum(){
+            document.getElementById('main5').style.height = "300px";
+            document.getElementById('img5').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function drumoff(){
+            document.getElementById('main5').style.height = "50px";
+            document.getElementById('img5').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+        function heart(){
+            document.getElementById('main6').style.height = "300px";
+            document.getElementById('img6').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function heartoff(){
+            document.getElementById('main6').style.height = "50px";
+            document.getElementById('img6').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+        function note(){
+            document.getElementById('main7').style.height = "300px";
+            document.getElementById('img7').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function noteoff(){
+            document.getElementById('main7').style.height = "50px";
+            document.getElementById('img7').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+        function vale(){
+            document.getElementById('main8').style.height = "300px";
+            document.getElementById('img8').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function valeoff(){
+            document.getElementById('main8').style.height = "50px";
+            document.getElementById('img8').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+        function truth(){
+            document.getElementById('main9').style.height = "300px";
+            document.getElementById('img9').setAttribute("style",'height : 250px; width : 250px;border : 10px solid black; border-radius : 10px');   
+        }
+        function truthoff(){
+            document.getElementById('main10').style.height = "50px";
+            document.getElementById('img10').setAttribute("style",'height : 0px; width : 0px;');   
+        }
+    </script>
+</body>
+</html>
